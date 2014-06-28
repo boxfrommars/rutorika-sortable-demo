@@ -147,8 +147,9 @@
      * @param positionId
      */
     var changePosition = function(type, entityName, id, positionId){
-        console.log.apply(console, arguments);
+
         var deferred = $.Deferred();
+
         $.ajax({
             'url': '/sort',
             'type': 'POST',
@@ -183,8 +184,8 @@
                 handle: '.sortable-handle',
                 axis: 'y',
                 update: function(a, b){
-                    var $that = $(this);
-                    var entityName = $that.data('entityname');
+
+                    var entityName = $(this).data('entityname');
                     var $sorted = b.item;
 
                     var $previous = $sorted.prev();
