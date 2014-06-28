@@ -10,12 +10,6 @@
         "rutorika/sortable": "dev-master"
 	},
 
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/boxfrommars/rutorika-sortable"
-        }
-    ],
 	"autoload": {
 		"classmap": [
 			"app/commands",
