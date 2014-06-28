@@ -170,13 +170,13 @@
             },
             'success': function(data) {
                 if (data.success) {
-                    App.notify.success('Позиция сохранена');
+                    App.notify.success('Order saved');
                 } else {
                     App.notify.validationError(data.errors);
                 }
             },
             'error': function(){
-                App.notify.danger('Что-то пошло не так, позиция не изменена');
+                App.notify.danger('Something wrong!');
             },
             'complete': function(){
                 deferred.resolve(undefined);
@@ -213,7 +213,7 @@
                             // do smth
                         });
                     } else {
-                        App.notify.danger('Невозможно определить позицию элемента');
+                        App.notify.danger('Something wrong!');
                     }
                 },
                 cursor: "move"
