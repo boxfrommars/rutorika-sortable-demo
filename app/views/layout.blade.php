@@ -10,8 +10,6 @@
 
     <!-- Loading Flat UI -->
     <link href="/vendor/flat-ui/css/flat-ui.css" rel="stylesheet">
-    <link href="/vendor/jQuery-File-Upload/css/jquery.fileupload.css" rel="stylesheet">
-<!--    <link href="/vendor/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">-->
 
     <style>
         .grid-actions {
@@ -20,9 +18,6 @@
 
         .grid-actions .btn {
             margin-left: 16px;
-        }
-        .sortable-row {
-            width: 100%;
         }
         .sortable-handle {
             cursor: move;
@@ -43,7 +38,7 @@
 
         /** forms */
     </style>
-    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
@@ -105,10 +100,6 @@
 <script src="/vendor/flat-ui/js/jquery.tagsinput.js"></script>
 <script src="/vendor/flat-ui/js/jquery.placeholder.js"></script>
 <script src="/vendor/bootstrap-growl/jquery.bootstrap-growl.min.js"></script>
-
-<script src="/vendor/jQuery-File-Upload/js/jquery.iframe-transport.js"></script>
-<script src="/vendor/jQuery-File-Upload/js/jquery.fileupload.js"></script>
-<script src="/vendor/holderjs/holder.js"></script>
 
 <script>
 
