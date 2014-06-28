@@ -55,8 +55,7 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-01">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="/articles">Articles</a></li>
-            <li><a href="">Features</a></li>
+            <li class="active"><a href="/">Articles</a></li>
         </ul>
         <p class="navbar-text navbar-right">Signed in as <a class="navbar-link" href="#">Administrator</a></p>
     </div><!-- /.navbar-collapse -->
@@ -170,7 +169,7 @@
             },
             'success': function(data) {
                 if (data.success) {
-                    App.notify.success('Order saved');
+                    App.notify.success('Saved!');
                 } else {
                     App.notify.validationError(data.errors);
                 }
