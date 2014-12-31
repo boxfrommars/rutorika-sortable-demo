@@ -21,12 +21,6 @@
       "app/tests/TestCase.php"
     ]
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "/home/xu/Workspace/rutorika-sortable"
-    }
-  ],
   "scripts": {
     "post-install-cmd": [
       "php artisan clear-compiled",
