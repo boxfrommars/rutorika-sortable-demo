@@ -14,7 +14,14 @@
 Route::get('/', function()
 {
     $articles = Article::sorted()->get();
-    return View::make('layout', array('articles' => $articles));
+    return View::make('articles', array('articles' => $articles));
+});
+
+Route::get('/grouped', function()
+{
+    $firstArticles = GroupedArticle::where('category', 'first')->sorted()->get();
+    $secondArticles = GroupedArticle::where('category', 'second')->sorted()->get();
+    return View::make('grouped_articles', array('firstArticles' => $firstArticles, 'secondArticles' => $secondArticles));
 });
 
 

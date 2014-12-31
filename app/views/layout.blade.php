@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Porcelain</title>
+    <title>Rutorika/Sortable Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
@@ -50,7 +50,8 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-01">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Articles</a></li>
+            <li><a href="/">Articles</a></li>
+            <li><a href="/grouped">Grouped articles</a></li>
         </ul>
         <p class="navbar-text navbar-right">Signed in as <a class="navbar-link" href="#">Administrator</a></p>
     </div><!-- /.navbar-collapse -->
@@ -60,30 +61,7 @@
     <div class="alert alert-danger">{{ trans(Session::get('error')) }} <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button></div>
     @endif
 
-    <h3>Articles</h3>
-    <table class="table table-striped table-hover">
-        <thead>
-        <tr>
-            <th></th>
-            <th>#</th>
-            <th>title</th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody class="sortable" data-entityname="articles">
-        @foreach ($articles as $article)
-        <tr data-itemId="{{{ $article->id }}}">
-            <td class="sortable-handle"><span class="glyphicon glyphicon-sort"></span></td>
-            <td class="id-column">{{{ $article->id }}}</td>
-            <td>{{{ $article->title }}}</td>
-            <td class="grid-actions">
-                <a href="#" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></a>
-                <a href="#" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-remove"></span></a>
-            </td>
-        </tr>
-        @endforeach
-        </tbody>
-    </table>
+    @yield('content')
 </div>
 <!-- /.container -->
 

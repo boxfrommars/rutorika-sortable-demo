@@ -10,6 +10,9 @@
  * @property \Carbon\Carbon $updated_at
  * @method static \Article sorted() 
  */
-class Article extends Eloquent {
+class GroupedArticle extends Eloquent {
+
+    protected static $sortableGroupField = 'category';
+
     use \Rutorika\Sortable\SortableTrait;
 }
