@@ -12,7 +12,7 @@
             <th></th>
         </tr>
         </thead>
-        <tbody class="sortable" data-entityname="articles">
+        <tbody class="sortable" data-entityname="grouped_articles">
         @foreach ($firstArticles as $article)
             <tr data-itemId="{{{ $article->id }}}">
                 <td class="sortable-handle"><span class="glyphicon glyphicon-sort"></span></td>
