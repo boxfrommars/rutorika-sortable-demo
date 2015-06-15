@@ -9,7 +9,7 @@
   "require": {
     "laravel/framework": "4.2.*",
     "fzaninotto/faker": "1.4.*@dev",
-    "rutorika/sortable": "dev-master"
+    "rutorika/sortable": "1.*"
   },
   "autoload": {
     "classmap": [
